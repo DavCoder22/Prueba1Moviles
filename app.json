@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Ecuador Team App",
+    "slug": "ecuador-team-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#003893"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ecuadorteam.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#003893"
+      },
+      "package": "com.ecuadorteam.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    }
+  }
+}
