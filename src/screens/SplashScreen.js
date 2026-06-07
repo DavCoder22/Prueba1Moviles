@@ -41,7 +41,7 @@ export default function SplashScreen({ onFinish }) {
         ]}
       >
         <Image source={require("../../assets/Ecuador.png")} style={styles.logo} />
-        <Text style={styles.title}>LA TRI</Text>
+        <Text style={styles.title}>Ecuador - La Tri</Text>
         <Text style={styles.subtitle}>Selección Ecuatoriana de Fútbol</Text>
       </Animated.View>
     </View>

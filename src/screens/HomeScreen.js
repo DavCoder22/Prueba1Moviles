@@ -6,10 +6,19 @@ import {
   ScrollView,
   StyleSheet,
   StatusBar,
+  TouchableOpacity,
+  Alert,
 } from "react-native";
 import { COLORS, TEAM_DATA } from "../data/teamData";
 
 export default function HomeScreen() {
+  const showTeamInfo = () => {
+    Alert.alert(
+      TEAM_DATA.nickname,
+      `${TEAM_DATA.name}\n\nFundado en ${TEAM_DATA.founded}\nConfederación: ${TEAM_DATA.confederation}\nRanking FIFA: #${TEAM_DATA.fifaRanking}\nEntrenador: ${TEAM_DATA.headCoach}\nEstadio: ${TEAM_DATA.stadium}`,
+      [{ text: "¡Vamos Ecuador!" }]
+    );
+  };
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={COLORS.blue} />
@@ -50,6 +59,10 @@ export default function HomeScreen() {
           <Text style={styles.sectionTitle}>Descripción</Text>
           <Text style={styles.description}>{TEAM_DATA.description}</Text>
         </View>
+
+        <TouchableOpacity style={styles.button} onPress={showTeamInfo}>
+          <Text style={styles.buttonText}>Ver información del equipo</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -156,5 +169,23 @@ const styles = StyleSheet.create({
     color: COLORS.darkGray,
     lineHeight: 22,
     textAlign: "justify",
+  },
+  button: {
+    backgroundColor: COLORS.blue,
+    paddingVertical: 14,
+    borderRadius: 12,
+    alignItems: "center",
+    marginTop: 4,
+    shadowColor: COLORS.black,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  buttonText: {
+    color: COLORS.yellow,
+    fontSize: 16,
+    fontWeight: "bold",
+    letterSpacing: 1,
   },
 });
