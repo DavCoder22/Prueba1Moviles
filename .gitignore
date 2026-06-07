@@ -25,5 +25,8 @@ Thumbs.db
 *.key
 *.mobileprovision
 
+# Utility scripts (not needed in repo)
+generate-pdf.js
+
 # Temp
 *.orig.*
