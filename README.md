@@ -1,4 +1,4 @@
-# Ecuador Team App ⚽🇪🇨
+# Ecuador Team App
 
 Aplicación móvil básica desarrollada con **React Native + Expo Go** que muestra información de la **Selección Ecuatoriana de Fútbol**.
 
@@ -23,14 +23,12 @@ EcuadorTeamApp/
 ├── App.js                   # Punto de entrada de la app
 ├── app.json                 # Configuración de Expo
 ├── package.json             # Dependencias del proyecto
-├── setup.bash               # Script para instalar y ejecutar (Linux/macOS)
-└── setup.ps1                # Script para instalar y ejecutar (Windows)
+└── setup.bat                # Script automatizado para Windows
 ```
 
 ## Requisitos previos
 
 - Node.js v18+
-- Expo CLI (`npm install -g expo-cli`)
 - Expo Go instalado en tu dispositivo móvil (iOS/Android)
 
 ## Cómo ejecutar
@@ -49,17 +47,10 @@ npx expo start
 # 4. Escanear el código QR con Expo Go en tu dispositivo
 ```
 
-O usando el script automatizado:
+O usando el script automatizado (Windows):
 
-**Windows (PowerShell):**
-```powershell
-.\setup.ps1
-```
-
-**Linux/macOS:**
-```bash
-chmod +x setup.bash
-./setup.bash
+```cmd
+setup.bat
 ```
 
 ## Tecnologías usadas

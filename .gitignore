@@ -1,12 +1,29 @@
+# Dependencies
 node_modules/
+
+# Expo
 .expo/
 dist/
+web-build/
+
+# Logs
 npm-debug.*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+
+# Temp
 *.orig.*
-web-build/
-.DS_Store
