@@ -23,7 +23,8 @@ EcuadorTeamApp/
 ├── App.js                   # Punto de entrada de la app
 ├── app.json                 # Configuración de Expo
 ├── package.json             # Dependencias del proyecto
-└── setup.bash               # Script para instalar y ejecutar
+├── setup.bash               # Script para instalar y ejecutar (Linux/macOS)
+└── setup.ps1                # Script para instalar y ejecutar (Windows)
 ```
 
 ## Requisitos previos
@@ -50,6 +51,12 @@ npx expo start
 
 O usando el script automatizado:
 
+**Windows (PowerShell):**
+```powershell
+.\setup.ps1
+```
+
+**Linux/macOS:**
 ```bash
 chmod +x setup.bash
 ./setup.bash
