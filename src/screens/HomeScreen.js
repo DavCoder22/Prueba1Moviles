@@ -2,11 +2,11 @@ import React from "react";
 import {
   View,
   Text,
+  Image,
   ScrollView,
   StyleSheet,
   StatusBar,
 } from "react-native";
-import TeamLogo from "../components/TeamLogo";
 import { COLORS, TEAM_DATA } from "../data/teamData";
 
 export default function HomeScreen() {
@@ -14,7 +14,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={COLORS.blue} />
       <View style={styles.header}>
-        <TeamLogo size={80} />
+        <Image source={require("../../assets/Ecuador.png")} style={styles.headerLogo} />
         <Text style={styles.headerTitle}>{TEAM_DATA.nickname}</Text>
         <Text style={styles.headerSubtitle}>{TEAM_DATA.name}</Text>
       </View>
@@ -76,6 +76,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
+  },
+  headerLogo: {
+    width: 80,
+    height: 80,
+    resizeMode: "contain",
   },
   headerTitle: {
     fontSize: 28,

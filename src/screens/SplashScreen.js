@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { View, Text, Animated, StyleSheet } from "react-native";
-import TeamLogo from "../components/TeamLogo";
+import { View, Text, Image, Animated, StyleSheet } from "react-native";
 import { COLORS } from "../data/teamData";
 
 export default function SplashScreen({ onFinish }) {
@@ -41,7 +40,7 @@ export default function SplashScreen({ onFinish }) {
           { opacity: fadeAnim, transform: [{ scale: scaleAnim }] },
         ]}
       >
-        <TeamLogo size={150} />
+        <Image source={require("../../assets/Ecuador.png")} style={styles.logo} />
         <Text style={styles.title}>LA TRI</Text>
         <Text style={styles.subtitle}>Selección Ecuatoriana de Fútbol</Text>
       </Animated.View>
@@ -65,6 +64,11 @@ const styles = StyleSheet.create({
     color: COLORS.yellow,
     marginTop: 20,
     letterSpacing: 4,
+  },
+  logo: {
+    width: 150,
+    height: 150,
+    resizeMode: "contain",
   },
   subtitle: {
     fontSize: 16,

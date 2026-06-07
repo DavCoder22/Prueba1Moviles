@@ -4,13 +4,13 @@
     "slug": "ecuador-team-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Ecuador.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#003893"
-    },
+"splash": {
+  "image": "./assets/Ecuador.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#003893"
+},
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ecuadorteam.app"
