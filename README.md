@@ -11,10 +11,8 @@ Aplicación móvil básica desarrollada con **React Native + Expo Go** que muest
 
 ```
 EcuadorTeamApp/
-├── assets/                  # Recursos estáticos (iconos, splash)
+├── assets/                  # Recursos estáticos (icono, logo Ecuador)
 ├── src/
-│   ├── components/
-│   │   └── TeamLogo.js      # Componente del escudo tricolor
 │   ├── data/
 │   │   └── teamData.js      # Datos del equipo ecuatoriano
 │   └── screens/
@@ -23,7 +21,11 @@ EcuadorTeamApp/
 ├── App.js                   # Punto de entrada de la app
 ├── app.json                 # Configuración de Expo
 ├── package.json             # Dependencias del proyecto
-└── setup.bat                # Script automatizado para Windows
+├── setup.bat                # Script automatizado para Windows
+├── Evidencia1.png           # QR del servidor Expo
+├── Evidencia2.png           # Splash Screen en Android
+├── Evidencia3.png           # Home Screen en Expo Go
+└── README.md                # Documentación del proyecto
 ```
 
 ## Requisitos previos
@@ -52,6 +54,14 @@ O usando el script automatizado (Windows):
 ```cmd
 setup.bat
 ```
+
+## Evidencias de despliegue
+
+| Imagen | Descripción |
+|---|---|
+| ![Evidencia 1](Evidencia1.png) | **Evidencia 1** — Servidor de desarrollo iniciado con Expo CLI. Se muestra la terminal con el código QR generado para escanear desde Expo Go en el dispositivo móvil. |
+| ![Evidencia 2](Evidencia2.png) | **Evidencia 2** — Pantalla del teléfono Android con la aplicación corriendo. Se observa el Splash Screen con el escudo de la Selección Ecuatoriana de Fútbol. |
+| ![Evidencia 3](Evidencia3.png) | **Evidencia 3** — La aplicación abierta en Expo Go, mostrando la pantalla de inicio (Home Screen) con la información del equipo dentro del entorno de Expo Go. |
 
 ## Tecnologías usadas
 
